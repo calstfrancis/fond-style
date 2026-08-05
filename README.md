@@ -56,6 +56,31 @@ css.load_from_data((_FOND.read_text() + APP_CSS).encode())
 | `.fond-onhover` | drag handles and secondary affordances |
 | `.fond-search` | an unframed search field inside a list |
 
+## The one trap in adopting it
+
+`fond.css` is loaded **before** the app's own stylesheet, so an app can override
+it. The cost is that a *generic* app rule beats a fond rule at equal
+specificity, silently, because it comes later. Both of these bit Rubric during
+its migration:
+
+```css
+row.activatable > box { padding: 10px 0; }      /* beats row.fond-row > box */
+headerbar button:not(.suggested-action) { … }   /* beats headerbar button.fond-pill */
+```
+
+The fix is to say in the app's own sheet that its generic rule does not apply to
+suite components:
+
+```css
+row.activatable:not(.fond-row) > box { … }
+headerbar button:not(.suggested-action):not(.fond-pill) { … }
+```
+
+Look for element-level selectors (`row`, `headerbar button`, `list`) in the app
+sheet before adopting; those are the ones that collide. A pixel-diff of a
+screenshot before and after adoption catches the rest — Rubric's migration went
+17% → 8% → 2.8% → 0% differing pixels as each collision was found.
+
 ## Things learned the expensive way
 
 These are in the stylesheet as comments too, because each one cost a round of
