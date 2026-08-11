@@ -101,3 +101,10 @@ These are in the stylesheet as comments too, because each one cost a round of
 - **Icon names are shared between themes; the drawings are not.** Under KDE a
   libadwaita app resolves them from Breeze and ends up mixing two icon
   languages. Pin `gtk-icon-theme-name` to Adwaita at startup.
+
+## The desktop it runs on
+
+`plasma/` carries the same design language outward to KDE Plasma — colour
+schemes taken from libadwaita's own values, a desktop theme, and a
+look-and-feel package binding them together, so a Fond app and the Qt
+applications around it read as one desktop. See `plasma/README.md`.

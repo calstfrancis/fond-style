@@ -1,0 +1,20 @@
+{
+    "KPackageStructure": "Plasma/Theme",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "calstfrancis@gmail.com",
+                "Name": "Cal"
+            }
+        ],
+        "Category": "",
+        "Description": "The Fond suite's interface language, applied to the desktop",
+        "EnabledByDefault": true,
+        "Id": "fond",
+        "License": "LGPL",
+        "Name": "Fond",
+        "Version": "0.1.0",
+        "Website": "https://github.com/calstfrancis"
+    },
+    "X-Plasma-API": "5.0"
+}

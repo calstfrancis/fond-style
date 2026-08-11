@@ -1,0 +1,8 @@
+# Fond has no separate colour file, deliberately. A desktop theme that ships
+# one pins its own palette and stops following the colour scheme; without one,
+# Plasma rewrites each SVG's `current-color-scheme` stylesheet at runtime from
+# whichever scheme is active. That is the same rule fond.css states in its
+# header — nothing hardcoded, so a change of scheme or accent is picked up for
+# free — and it is what lets one set of SVGs serve Fond Light and Fond Dark.
+[Theme]
+name=Fond

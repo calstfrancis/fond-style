@@ -1,0 +1,61 @@
+; Fond — the defaults applied when this look-and-feel is selected.
+;
+; Section headers are [file][Group]: everything here is written into the named
+; config file when the theme is applied, so this one file is what turns four
+; separate pieces (colour scheme, desktop theme, widget style, decoration) into
+; a single entry in System Settings.
+;
+; The widget style stays Breeze rather than something exotic. Fond is not a
+; different set of widgets, it is a different set of decisions about surfaces,
+; edges and emphasis — and Breeze, configured quietly, lands much closer to
+; Adwaita than any of the heavier Qt styles do.
+
+[kdeglobals][General]
+ColorScheme=FondLight
+Name=Fond Light
+widgetStyle=Breeze
+accentColorFromWallpaper=false
+
+[kdeglobals][KDE]
+widgetStyle=Breeze
+
+[kdeglobals][Icons]
+Theme=breeze
+
+[plasmarc][Theme]
+name=fond
+
+[kwinrc][org.kde.kdecoration2]
+library=org.kde.breeze
+theme=Breeze
+BorderSize=None
+BorderSizeAuto=false
+
+; The decoration, read against fond.css:
+;   DrawTitleBarSeparator   the hairline of .fond-edge-bottom, where chrome
+;                           meets content
+;   DrawBackgroundGradient  off — Fond surfaces are flat
+;   TitleAlignment          centred, as the window title is in every app
+;   OutlineCloseButton      off — nothing in chrome should shout
+[breezerc][Windeco]
+DrawBackgroundGradient=false
+DrawBorderOnMaximizedWindows=false
+DrawTitleBarSeparator=true
+TitleAlignment=AlignCenterFullWidth
+ButtonSize=0
+OutlineCloseButton=false
+
+; The widget style, same reading:
+;   the separator options are all off, because a Fond layout separates things
+;   by surface and by space rather than by drawing lines between them
+;   the scroll bar loses its stepper buttons, as Adwaita's has none
+[breezerc][Style]
+ToolBarDrawItemSeparator=false
+SidePanelDrawFrame=false
+DockWidgetDrawFrame=false
+MenuItemDrawStrongFocus=false
+ScrollBarAddLineButtons=0
+ScrollBarSubLineButtons=0
+SliderDrawTickMarks=false
+TabBarDrawCenteredTabs=true
+WindowDragMode=WD_FULL

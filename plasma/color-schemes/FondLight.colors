@@ -1,0 +1,170 @@
+﻿# Fond Light — libadwaita's light palette, expressed as a Plasma colour scheme.
+#
+# Every value here is lifted from libadwaita's own named colours rather than
+# invented, so a Qt or Plasma window sits on the desktop at exactly the same
+# tone as Zerkalo, Rubric and the rest of the suite beside it. The mapping:
+#
+#   Colors:Window        @window_bg_color            #fafafb
+#   Colors:View          @view_bg_color              #ffffff
+#   Colors:Button        @card_bg_color              #ffffff
+#   Colors:Header        @sidebar_bg_color           #ebebed   (see below)
+#   Colors:Complementary @secondary_sidebar_bg_color #f3f3f5
+#   Colors:Tooltip       @popover_bg_color           #ffffff
+#   Selection            @accent_bg_color            #3584e4
+#
+# Header takes the *sidebar* colour, not Adwaita's @headerbar_bg_color. That is
+# the same judgement fond.css records at the top of its Surfaces section:
+# Adwaita's header bar is pure white in the light scheme, so using it gives no
+# separation from the content at all. Chrome has to be the darker plane.
+#
+# Foregrounds resolve @window_fg_color — RGB(0 0 6 / 80%) — against the surface
+# it sits on, since Plasma wants opaque values.
+
+[ColorEffects:Disabled]
+Color=250,250,251
+ColorAmount=0
+ColorEffect=0
+ContrastAmount=0.65
+ContrastEffect=1
+IntensityAmount=0.1
+IntensityEffect=2
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=true
+Color=140,140,143
+ColorAmount=0.025
+ColorEffect=2
+ContrastAmount=0.1
+ContrastEffect=2
+Enable=false
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate=243,243,245
+BackgroundNormal=255,255,255
+DecorationFocus=53,132,228
+DecorationHover=53,132,228
+ForegroundActive=28,113,216
+ForegroundInactive=140,140,143
+ForegroundLink=28,113,216
+ForegroundNegative=192,28,40
+ForegroundNeutral=156,104,0
+ForegroundNormal=50,50,55
+ForegroundPositive=27,133,83
+ForegroundVisited=129,61,156
+
+[Colors:Complementary]
+BackgroundAlternate=235,235,237
+BackgroundNormal=243,243,245
+DecorationFocus=53,132,228
+DecorationHover=53,132,228
+ForegroundActive=28,113,216
+ForegroundInactive=140,140,143
+ForegroundLink=28,113,216
+ForegroundNegative=192,28,40
+ForegroundNeutral=156,104,0
+ForegroundNormal=50,50,55
+ForegroundPositive=27,133,83
+ForegroundVisited=129,61,156
+
+[Colors:Header]
+BackgroundAlternate=242,242,244
+BackgroundNormal=235,235,237
+DecorationFocus=53,132,228
+DecorationHover=53,132,228
+ForegroundActive=28,113,216
+ForegroundInactive=140,140,143
+ForegroundLink=28,113,216
+ForegroundNegative=192,28,40
+ForegroundNeutral=156,104,0
+ForegroundNormal=50,50,55
+ForegroundPositive=27,133,83
+ForegroundVisited=129,61,156
+
+[Colors:Header][Inactive]
+BackgroundAlternate=235,235,237
+BackgroundNormal=242,242,244
+DecorationFocus=53,132,228
+DecorationHover=53,132,228
+ForegroundActive=28,113,216
+ForegroundInactive=140,140,143
+ForegroundLink=28,113,216
+ForegroundNegative=192,28,40
+ForegroundNeutral=156,104,0
+ForegroundNormal=140,140,143
+ForegroundPositive=27,133,83
+ForegroundVisited=129,61,156
+
+[Colors:Selection]
+BackgroundAlternate=28,113,216
+BackgroundNormal=53,132,228
+DecorationFocus=53,132,228
+DecorationHover=53,132,228
+ForegroundActive=255,255,255
+ForegroundInactive=220,232,250
+ForegroundLink=255,255,255
+ForegroundNegative=255,180,180
+ForegroundNeutral=250,225,150
+ForegroundNormal=255,255,255
+ForegroundPositive=180,240,205
+ForegroundVisited=235,215,245
+
+[Colors:Tooltip]
+BackgroundAlternate=250,250,251
+BackgroundNormal=255,255,255
+DecorationFocus=53,132,228
+DecorationHover=53,132,228
+ForegroundActive=28,113,216
+ForegroundInactive=140,140,143
+ForegroundLink=28,113,216
+ForegroundNegative=192,28,40
+ForegroundNeutral=156,104,0
+ForegroundNormal=50,50,55
+ForegroundPositive=27,133,83
+ForegroundVisited=129,61,156
+
+[Colors:View]
+BackgroundAlternate=243,243,245
+BackgroundNormal=255,255,255
+DecorationFocus=53,132,228
+DecorationHover=53,132,228
+ForegroundActive=28,113,216
+ForegroundInactive=140,140,143
+ForegroundLink=28,113,216
+ForegroundNegative=192,28,40
+ForegroundNeutral=156,104,0
+ForegroundNormal=51,51,56
+ForegroundPositive=27,133,83
+ForegroundVisited=129,61,156
+
+[Colors:Window]
+BackgroundAlternate=243,243,245
+BackgroundNormal=250,250,251
+DecorationFocus=53,132,228
+DecorationHover=53,132,228
+ForegroundActive=28,113,216
+ForegroundInactive=140,140,143
+ForegroundLink=28,113,216
+ForegroundNegative=192,28,40
+ForegroundNeutral=156,104,0
+ForegroundNormal=50,50,55
+ForegroundPositive=27,133,83
+ForegroundVisited=129,61,156
+
+[General]
+ColorScheme=Fond Light
+Name=Fond Light
+accentColorFromWallpaper=false
+shadeSortColumn=true
+
+[KDE]
+contrast=4
+
+[WM]
+activeBackground=235,235,237
+activeBlend=235,235,237
+activeForeground=50,50,55
+inactiveBackground=242,242,244
+inactiveBlend=242,242,244
+inactiveForeground=140,140,143

@@ -1,0 +1,23 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "calstfrancis@gmail.com",
+                "Name": "Cal"
+            }
+        ],
+        "Category": "",
+        "Description": "Four stacked surfaces, hairline edges, and chrome that stays quiet \u2014 the Fond suite's interface language, applied to the whole desktop",
+        "EnabledByDefault": true,
+        "Id": "io.github.calstfrancis.fond",
+        "License": "LGPL",
+        "Name": "Fond",
+        "Version": "0.1.0",
+        "Website": "https://github.com/calstfrancis"
+    },
+    "X-Plasma-MainScript": "defaults",
+    "X-KPackage-Dependencies": [],
+    "X-Plasma-APIVersion": 2,
+    "Keywords": "Desktop;Workspace;Appearance;Look and Feel;"
+}
