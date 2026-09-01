@@ -31,6 +31,18 @@ The look-and-feel sets **Fond Light**. For dark, System Settings → Colors →
 Fond Dark; the desktop theme follows either without being switched, for the
 reason in the next section.
 
+## Fondwave — a dusk variant
+
+`color-schemes/Fondwave.colors` and `look-and-feel/io.github.calstfrancis.fondwave/`
+pair the same shared `desktoptheme/fond/` with a warm dusk palette — indigo
+through berry magenta and coral to peach — pulled from the Carmine Cloud
+keycap set, rather than Fond's neutral libadwaita-derived tones. It is a mood,
+not a second design language: same surfaces, same radius, same hairlines,
+just a different set of colours flowing through the `current-color-scheme`
+stylesheet. Install with `./install-fondwave.sh` (same `--apply`/`--uninstall`
+flags as `install.sh`). Unlike Fond, it is a single scheme rather than a
+light/dark pair.
+
 ## The palette is libadwaita's, not an invention
 
 Every value in the two `.colors` files is lifted from libadwaita's own named

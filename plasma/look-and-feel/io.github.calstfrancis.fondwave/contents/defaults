@@ -1,0 +1,49 @@
+; Fondwave — the defaults applied when this look-and-feel is selected.
+;
+; Same shapes as Fond (the desktoptheme is shared and ships no colours file of
+; its own, so it just picks up whichever scheme is active) with a different
+; palette: Fondwave.colors, a dusk gradient — indigo through berry and coral
+; to peach — pulled from the Carmine Cloud keycap set. See ../../README.md.
+;
+; The widget style stays Breeze, quiet, exactly as Fond configures it — this
+; is a different mood, not a different design language.
+
+[kdeglobals][General]
+ColorScheme=Fondwave
+Name=Fondwave
+widgetStyle=Breeze
+accentColorFromWallpaper=false
+
+[kdeglobals][KDE]
+widgetStyle=Breeze
+
+[kdeglobals][Icons]
+Theme=breeze
+
+[plasmarc][Theme]
+name=fond
+
+[kwinrc][org.kde.kdecoration2]
+library=org.kde.breeze
+theme=Breeze
+BorderSize=None
+BorderSizeAuto=false
+
+[breezerc][Windeco]
+DrawBackgroundGradient=false
+DrawBorderOnMaximizedWindows=false
+DrawTitleBarSeparator=true
+TitleAlignment=AlignCenterFullWidth
+ButtonSize=0
+OutlineCloseButton=false
+
+[breezerc][Style]
+ToolBarDrawItemSeparator=false
+SidePanelDrawFrame=false
+DockWidgetDrawFrame=false
+MenuItemDrawStrongFocus=false
+ScrollBarAddLineButtons=0
+ScrollBarSubLineButtons=0
+SliderDrawTickMarks=false
+TabBarDrawCenteredTabs=true
+WindowDragMode=WD_FULL

@@ -1,0 +1,23 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "calstfrancis@gmail.com",
+                "Name": "Cal"
+            }
+        ],
+        "Category": "",
+        "Description": "Fond's neutral grey surfaces, dressed in Fondwave's indigo, berry and coral highlights instead of Adwaita blue",
+        "EnabledByDefault": true,
+        "Id": "io.github.calstfrancis.fondwaveslate",
+        "License": "LGPL",
+        "Name": "Fondwave Slate",
+        "Version": "0.1.0",
+        "Website": "https://github.com/calstfrancis"
+    },
+    "X-Plasma-MainScript": "defaults",
+    "X-KPackage-Dependencies": [],
+    "X-Plasma-APIVersion": 2,
+    "Keywords": "Desktop;Workspace;Appearance;Look and Feel;"
+}

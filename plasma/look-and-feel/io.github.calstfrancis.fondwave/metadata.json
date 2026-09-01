@@ -1,0 +1,23 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "calstfrancis@gmail.com",
+                "Name": "Cal"
+            }
+        ],
+        "Category": "",
+        "Description": "Fond's surfaces and shapes, dressed in a dusk palette of indigo, berry and coral fading to peach — inspired by the Carmine Cloud keycap set",
+        "EnabledByDefault": true,
+        "Id": "io.github.calstfrancis.fondwave",
+        "License": "LGPL",
+        "Name": "Fondwave",
+        "Version": "0.1.0",
+        "Website": "https://github.com/calstfrancis"
+    },
+    "X-Plasma-MainScript": "defaults",
+    "X-KPackage-Dependencies": [],
+    "X-Plasma-APIVersion": 2,
+    "Keywords": "Desktop;Workspace;Appearance;Look and Feel;"
+}
