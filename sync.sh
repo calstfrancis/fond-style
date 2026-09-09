@@ -14,7 +14,7 @@ set -euo pipefail
 SRC="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/style/fond.css"
 PROJECTS="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
-APPS=(rubric zerkalo skrizhal iskra Gost kopilka retseptura chered)
+APPS=(rubric zerkalo skrizhal iskra Gost kopilka retseptura chered kartoteka/kartoteka-ui-gtk sputnik/sputnik-ui-gtk)
 
 [[ $# -gt 0 ]] && APPS=("$@")
 

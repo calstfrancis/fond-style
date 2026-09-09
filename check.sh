@@ -35,7 +35,7 @@ rc=0
 if [[ $# -gt 0 ]]; then
   check_one "$1" || rc=1
 else
-  for app in rubric zerkalo skrizhal iskra Gost kopilka retseptura chered; do
+  for app in rubric zerkalo skrizhal iskra Gost kopilka retseptura chered kartoteka/kartoteka-ui-gtk sputnik/sputnik-ui-gtk; do
     [[ -d "$PROJECTS/$app" ]] || continue
     check_one "$PROJECTS/$app" || rc=1
   done
